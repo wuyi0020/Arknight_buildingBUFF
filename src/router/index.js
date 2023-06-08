@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-
+import Build from '@/views/BulidBUFFView.vue';
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -20,7 +20,7 @@ const router = createRouter({
     {
       path: '/bulid',
       name: 'bulid',
-      component: () => import('../views/BulidBUFFView.vue')
+      component: Build
     }
   ]
 })
